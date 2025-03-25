@@ -1,5 +1,6 @@
 
-@import "modern-normalize";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 
 
 * {
@@ -12,6 +13,7 @@
 
 body{
   height: 100vh;
+  font-family: 'Roboto';
 }
 
 .container{
@@ -26,28 +28,25 @@ aside{
   background-color: rgb(20, 159, 223);
 }
 
-header{
-  
-}
 
 main{
   background-color: lightgrey;
 }
 
 .dash-title{
-  font-size: 2rem;
-}
-
-.dash-item{
   font-size: 1.5rem;
 }
 
+.dash-item{
+  font-size: 1.2rem;
+}
+
 .dash-title,.dash-item{
-    display: flex;
-    align-items: center;
-    color: white;
-    font-weight: bold;
-    margin: 13px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  margin: 13px;
 }
 
 .dash-title > img{
@@ -59,11 +58,86 @@ main{
 
 .dash-item > img{
   fill: white;
-  height: 30px;
-  width: 30px;
   margin-right: 15px;
 }
 
 .margin-bottom{
   margin-bottom: 50px;
+}
+
+header{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  gap: 40px;
+  padding: 25px;
+}
+
+.header-top, .header-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-left{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 25px;
+  flex: auto;
+}
+
+.header-right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+
+.search-bar{
+  background-color: rgb(233, 232, 232);
+  height: 1.7rem;
+  flex: 1 1 auto;
+  max-width: 750px;
+  min-width: 200px;
+  border-radius: 1.7rem;
+}
+
+.profile-min{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem;
+}
+
+.profile-max{
+  height: 6rem;
+  width: 6rem;
+  border-radius: 6rem;
+}
+
+.username-med{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.username-max{
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.header-top .username-med, .header-top .profile-min{
+  margin-left: 0px;
+}
+
+.button{
+  background-color: rgb(20, 159, 223);
+  border-radius: 20px;
+  padding: 8px 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.icon{
+  height: 1.7rem;
+  width: 1.7rem;
 }
