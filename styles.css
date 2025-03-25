@@ -1,0 +1,69 @@
+
+@import "modern-normalize";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  height: 100vh;
+}
+
+.container{
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+aside{
+  grid-row: 1 / 3;
+  background-color: rgb(20, 159, 223);
+}
+
+header{
+  
+}
+
+main{
+  background-color: lightgrey;
+}
+
+.dash-title{
+  font-size: 2rem;
+}
+
+.dash-item{
+  font-size: 1.5rem;
+}
+
+.dash-title,.dash-item{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin: 13px;
+}
+
+.dash-title > img{
+  height: 40px;
+  width: 40px;
+  fill: white;
+  margin-right: 15px;
+}
+
+.dash-item > img{
+  fill: white;
+  height: 30px;
+  width: 30px;
+  margin-right: 15px;
+}
+
+.margin-bottom{
+  margin-bottom: 50px;
+}
