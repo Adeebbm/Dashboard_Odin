@@ -16,6 +16,11 @@ body{
   font-family: 'Roboto';
 }
 
+.icon{
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
 .container{
   height: 100%;
   display: grid;
@@ -137,7 +142,31 @@ header{
   font-weight: bold;
 }
 
-.icon{
-  height: 1.7rem;
-  width: 1.7rem;
+main{
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  padding: 50px 20px;
+}
+
+.projects{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(375px,1fr));
+  grid-auto-rows: 200px;
+  gap: 15px;
+}
+
+.project{
+  background: linear-gradient(to right, rgb(250, 182, 55) 10px, white 10px);
+  padding: 40px 30px 20px 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-icons{
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
 }
